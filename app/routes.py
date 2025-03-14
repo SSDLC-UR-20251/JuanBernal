@@ -2,6 +2,7 @@ from flask import render_template, redirect, url_for, session
 from app import app
 from app.encryption import decrypt_aes, ofuscar_dni
 from app.reading import read_db
+from app.encryption import *
 
 
 # app.secret_key = 'your_secret_key'
@@ -37,7 +38,10 @@ def edit_user(email):
 
     user_info = db[email]
 
-    return render_template('edit_user.html', user_data=user_info, email=email)
+    # ✅ Desencriptar el DNI antes de pasarlo a la plantilla
+    dni_real = decrypt_dni(user_info['dni'], user_info['dni_nonce']) #desencriptar dni antes de ponerlo en el formulario de edit_user
+
+    return render_template('edit_user.html', user_data=user_info, dni=dni_real, email=email)
 
 
 # Formulario de retiro

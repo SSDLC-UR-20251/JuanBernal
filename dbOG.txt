@@ -1,0 +1,59 @@
+{
+    "juan.perez@urosario.edu.co": {
+        "nombre": "juan",
+        "apellido": "perez",
+        "username": "juan.perezzz",
+        "password": "juan.perez123",
+        "dni": "1010123456",
+        "dob": "1999-09-23"
+        },
+    "sara.palacios@urosario.edu.co": {
+        "nombre": "sara",
+        "apellido": "palacios",
+        "username": "sara.palaciosc",
+        "password": "sarapalacios123*",
+        "dni": "1010123456",
+        "dob": "1999-09-23"
+        },
+    "a@f.com": {
+        "nombre": "asd",
+        "apellido": "asd",
+        "username": "123asd",
+        "password": "123",
+        "dni": "123",
+        "dob": "1222-12-12"
+        },
+    "sara@palacios.coom": {
+        "nombre": "sara",
+        "apellido": "palaciosch",
+        "username": "sara",
+        "password": "123",
+        "dni": "123",
+        "dob": "1212-12-12"
+        },
+    "jose.torres@urosario.edu.co": {
+        "nombre": "jose",
+        "apellido": "torres",
+        "username": "jose.torres",
+        "password": "r&95k#2#ukvu456&",
+        "dni": "1234567890",
+        "dob": "2000-09-08",
+        "role": "admin"},
+    "sofia.jose@urosario.edu.co": {
+        "nombre": "sofia",
+        "apellido": "jose",
+        "username": "sofia.jose",
+        "password": "6cdaa5efb364a02b1e5d13d60c3ec0bccdad0f077941a4104c31662a6bb9790f",
+        "password_salt": "58805e314523e16b16126cb2df50209b",
+        "dni": "1234567891", "dob": "1999-09-09",
+        "role": "user"},
+    "juanseba.bernal@urosario.edu.co": {
+        "nombre": "juan",
+        "apellido": "bernal",
+        "username": "juanseba.bernal",
+        "password_hash": "1a1ca63e3f590f8ba817cf6743154e0eb4bc6910044ddad6972005f70ee229ae",
+        "salt": "0fd2fb26b8ab30f648c18257861fb89c",
+        "dni": "WHTmK9GCna5cvg==", "dni_nonce": "s0CD8DkEf2MSskk1dypbYg==",
+        "dob": "2003-01-17",
+        "role": "admin"}
+}

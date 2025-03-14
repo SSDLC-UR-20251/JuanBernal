@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-bs-theme="{{ request.cookies.get('darkmode', 'light') }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,7 +50,7 @@
             </div>
             <div class="form-group">
                 <label for="dni">DNI</label>
-                <input type="text" class="form-control" id="dni" name="dni" value="{{ user_data['dni'] }}" required>
+                <input type="text" class="form-control" id="dni" name="dni" value="{{ dni  }}" required>
             </div>
 
             <div class="form-group">
@@ -58,7 +58,11 @@
                 <input type="date" class="form-control" id="dob" name="dob" value="{{ user_data['dob'] }}" required>
             </div>
 
-
+            <!-- Agregar opción de Modo Oscuro -->
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="darkmode" name="darkmode" {% if request.cookies.get('darkmode') == 'dark' %}checked{% endif %}>
+                <label class="form-check-label" for="darkmode">Enable Dark Mode</label>
+            </div>
 
             <button type="submit" class="btn btn-primary">Save Changes</button>
             <a href="/records" class="btn btn-secondary">Cancel</a>

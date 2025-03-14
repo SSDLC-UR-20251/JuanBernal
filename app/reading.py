@@ -13,4 +13,4 @@ def read_db(db):
 # Función para escribir en la "base de datos" (archivo .txt)
 def write_db(db, data):
     with open(db, 'w') as f:
-        json.dump(data, f)
+        json.dump(data, f, indent=4)

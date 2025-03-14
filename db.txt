@@ -1,1 +1,80 @@
-{"juan.perez@urosario.edu.co": {"nombre": "juan", "apellido": "perez", "username": "juan.perezzz", "password": "juan.perez123", "dni": "1010123456", "dob": "1999-09-23"}, "sara.palacios@urosario.edu.co": {"nombre": "sara", "apellido": "palacios", "username": "sara.palaciosc", "password": "sarapalacios123*", "dni": "1010123456", "dob": "1999-09-23"}, "a@f.com": {"nombre": "asd", "apellido": "asd", "username": "123asd", "password": "123", "dni": "123", "dob": "1222-12-12"}, "sara@palacios.coom": {"nombre": "sara", "apellido": "palaciosch", "username": "sara", "password": "123", "dni": "123", "dob": "1212-12-12"}, "jose.torres@urosario.edu.co": {"nombre": "jose", "apellido": "torres", "username": "jose.torres", "password": "r&95k#2#ukvu456&", "dni": "1234567890", "dob": "2000-09-08", "role": "admin"}, "sofia.jose@urosario.edu.co": {"nombre": "sofia", "apellido": "jose", "username": "sofia.jose", "password": "6cdaa5efb364a02b1e5d13d60c3ec0bccdad0f077941a4104c31662a6bb9790f", "password_salt": "58805e314523e16b16126cb2df50209b", "dni": "1234567891", "dob": "1999-09-09", "role": "user"}}
+{
+    "juan.perez@urosario.edu.co": {
+        "nombre": "juan",
+        "apellido": "perez",
+        "username": "juan.perezzz",
+        "dni": "eEOXJi9RiR4Ukw==",
+        "dob": "1999-09-23",
+        "dni_nonce": "H4ja8bmt7lV9N1ty+k7GYw==",
+        "password_hash": "6e0e972e5880d5aa4e64eb6d83e892c64e8b0be9b5e82670922137ede8c9fe11",
+        "salt": "d153a9e1cb0220341589990b2ce3d337",
+        "role": "user"
+    },
+    "sara.palacios@urosario.edu.co": {
+        "nombre": "sara",
+        "apellido": "palacios",
+        "username": "sara.palaciosc",
+        "dni": "BmUWe49aRLiEAg==",
+        "dob": "1999-09-23",
+        "dni_nonce": "L0xGHtKeDrxZeAwC3xJGfg==",
+        "password_hash": "209ed097d0e2d2c6367b476871e222e90d2f6feb1e711382d291c319d9e13a03",
+        "salt": "9648b767fcd28c80094c4ca7308a54bc",
+        "role": "user"
+    },
+    "a@f.com": {
+        "nombre": "asd",
+        "apellido": "asd",
+        "username": "123asd",
+        "dni": "UuqJ",
+        "dob": "1222-12-12",
+        "dni_nonce": "3v2bbcEcWS29BQ6NSXfrdQ==",
+        "password_hash": "34b7d55794e3270beafa08600860aee46aed608f29114e8cf4b661f019b4c542",
+        "salt": "c2d47d301091fc87e1a1117395043687",
+        "role": "user"
+    },
+    "sara@palacios.coom": {
+        "nombre": "sara",
+        "apellido": "palaciosch",
+        "username": "sara",
+        "dni": "dSea",
+        "dob": "1212-12-12",
+        "dni_nonce": "R1k7JthGmKT0n25wgqRXVw==",
+        "password_hash": "e6206827fd3397b91dbaf86fa5cf942504773da900011adb5502a78eddf54a42",
+        "salt": "0ba79ab6ff25383ba6ba6461257bda6c",
+        "role": "user"
+    },
+    "jose.torres@urosario.edu.co": {
+        "nombre": "jose",
+        "apellido": "torres",
+        "username": "jose.torres",
+        "dni": "lDTZLrTafpkpXQ==",
+        "dob": "2000-09-08",
+        "role": "admin",
+        "dni_nonce": "7BB3dpo80bKS9S19Ekb2lg==",
+        "password_hash": "602cd814f0b641df91e4b10dff6d5a333e1c497139afdd78779ddd1b229eb355",
+        "salt": "4a7be207404d5f50ea218e1b02b7387a"
+    },
+    "sofia.jose@urosario.edu.co": {
+        "nombre": "sofia",
+        "apellido": "jose",
+        "username": "sofia.jose",
+        "password_salt": "58805e314523e16b16126cb2df50209b",
+        "dni": "fx5e4Nl+F/uS/A==",
+        "dob": "1999-09-09",
+        "role": "user",
+        "dni_nonce": "zVoMhHMpn+dUQhrSiR6XSA==",
+        "password_hash": "21f07580e04d079e6ea3596f6935de41ada82abb434441cae65c44922908a322",
+        "salt": "67e6f15cd179b4ca6d6eb09f6b230664"
+    },
+    "juanseba.bernal@urosario.edu.co": {
+        "nombre": "juan",
+        "apellido": "bernal",
+        "username": "juanseba.bernal",
+        "password_hash": "9261b0adec2f5c19ab27ee6f5c1b7866c88274e65eb6d995c893182a42caeadf",
+        "salt": "d87f4eb6c1a3403eb34b5ebbe0699bec",
+        "dni": "O+8gP0NIYrOvGg==",
+        "dni_nonce": "gRZkarsfHmhP6LTi+g+AFA==",
+        "dob": "2003-01-17",
+        "role": "admin"
+    }
+}
