@@ -32,7 +32,7 @@
             <a class="nav-link" href="/records">My Account</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/logout">Logout</a>
+            <a class="nav-link" href="/logout" id="logout">Logout</a>
           </li>
         </ul>
       </div>
@@ -41,7 +41,7 @@
     <div class="container mt-5">
       <!-- Page Title -->
       <h1 class="text-center mb-4">Welcome, {{ nombre }}</h1>
-      <h4 class="card-title text-center">
+      <h4 class="card-title text-center" id="saldo_usuario">
         Your current balance: {{ balance }}
       </h4>
 
@@ -50,6 +50,7 @@
       <div
         class="alert {{ 'alert-danger' if error else 'alert-success' }} text-center"
         role="alert"
+        id="alarma"
       >
         {{ message }}
       </div>
@@ -86,14 +87,20 @@
           <div class="row justify-content-center">
             <!-- Deposit Button -->
             <div class="col-md-4 mb-3">
-              <a href="/deposit" class="btn btn-primary btn-lg btn-block"
+              <a
+                href="/deposit"
+                class="btn btn-primary btn-lg btn-block"
+                id="deposit_button"
                 >Deposit</a
               >
             </div>
 
             <!-- Withdraw Button -->
             <div class="col-md-4 mb-3">
-              <a href="/withdraw" class="btn btn-warning btn-lg btn-block"
+              <a
+                href="/withdraw"
+                class="btn btn-warning btn-lg btn-block"
+                id="withdraw_button"
                 >Withdraw</a
               >
             </div>

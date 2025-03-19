@@ -10,7 +10,7 @@ app.secret_key = 'your_secret_key'
 
 # 🔐 Variables Globales para Control de Intentos
 MAX_INTENTOS = 3
-TIEMPO_BLOQUEO = 5 * 60  # 5 minutos en segundos
+TIEMPO_BLOQUEO = 300  # 5 minutos en segundos
 usuarios_estado = {}  # { "usuario": { "intentos": 0, "tiempoBloqueo": 0 } }
 
 
@@ -333,12 +333,12 @@ def api_withdraw():
                             message="Retiro exitoso",
                             error=False))
 
-@app.before_request
+"""@app.before_request
 def verify_session():
-    if request.endpoint not in ["login", "api_login", "static", "index", "register"]:# Excluimos el login y archivos estáticos para que no redirija en estas rutas
+    if request.endpoint not in ["login", "api_login", "register", "api_users"]:# Excluimos el login y archivos estáticos para que no redirija en estas rutas
         if 'email' not in session: # Si no hay una sesión activa
             flash("Tu sesión ha expirado. Por favor, inicia sesión nuevamente.", "error")
-            return redirect(url_for('login'))
+            return redirect(url_for('login'))"""
 
 @app.route('/logout') 
 def logout():

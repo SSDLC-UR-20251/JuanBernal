@@ -16,7 +16,9 @@
       <!-- Title -->
       <h1 class="text-center mb-4">Registro de Usuario</h1>
       {% if error %}
-      <div class="alert alert-danger text-center" role="alert">{{ error }}</div>
+      <div class="alert alert-danger text-center" role="alert" id="alarma">
+        {{ error }}
+      </div>
       {% endif %}
       <!-- Registration Form -->
       <div class="card shadow">
@@ -112,7 +114,11 @@
 
             <!-- Submit Button -->
             <div class="d-grid gap-2">
-              <button type="submit" class="btn btn-primary btn-lg">
+              <button
+                type="submit"
+                class="btn btn-primary btn-lg"
+                id="register_button"
+              >
                 Registrar
               </button>
             </div>

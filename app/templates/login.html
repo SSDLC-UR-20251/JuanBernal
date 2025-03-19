@@ -63,7 +63,11 @@
 
                 <!-- Submit Button -->
                 <div class="d-grid gap-2">
-                  <button type="submit" class="btn btn-primary btn-lg">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-lg"
+                    id="login"
+                  >
                     Iniciar Sesión
                   </button>
                 </div>
@@ -80,7 +84,9 @@
           <div class="text-center mt-4">
             <p>
               ¿No tienes una cuenta?
-              <a href="{{ url_for('register') }}">Regístrate aquí</a>
+              <a href="{{ url_for('register') }}" id="formulario"
+                >Regístrate aquí</a
+              >
             </p>
           </div>
         </div>
